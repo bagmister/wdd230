@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Tapestry&display=swap');
+header {
+    background-color: gray;
+    display: grid;
+    grid-column:  2/6;
+    grid-row: 1;
+    align-items: center;
+
+}
+language {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+main {
+    grid-column: 2/6;
+    grid-row: 4;
+    grid-area: 1,2;
+    align-items: center;
+}
+.author-image {
+    grid-column: 2;
+    grid-row: 1;
+    width: 50%;
+    height: 50%;
+}
+h2 {
+    align-items: center;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: repeat(8, 7em);
+    grid-template-rows: repeat(6, 7em);
+    background-color: #BF9E6A;
+    padding: 0;
+    font-size: 23px;
+    font-family:  'Grechen Fuemen', sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+nav {
+    text-align: center;
+    display: grid;
+    grid-column: 4;
+    grid-row: 1;
+    justify-content: space-around;
+    justify-items: center;
+    color: #F0F0C9;
+    font-family: 'Tapestry', 'Grechen Fuemen', sans-serif;
+    width: 100%;
+}
+nav :hover {
+    background-color: #642B2B;
+    color: #F0F0C9;
+}
+footer {
+    grid-column: 2/5;
+    grid-row: 6;
+    text-align: center;
+}
