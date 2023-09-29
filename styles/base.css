@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@500&family=Silkscreen&display=swap');
 header {
-    background-color: gray;
+    background-color: #10cae2;
     display: grid;
     grid-column:  2/6;
     grid-row: 1;
@@ -33,10 +33,10 @@ body {
     display: grid;
     grid-template-columns: repeat(8, 7em);
     grid-template-rows: repeat(6, 7em);
-    background-color: #BF9E6A;
+    background-color: #e8cb10;
     padding: 0;
-    font-size: 23px;
-    font-family:  'Grechen Fuemen', sans-serif;
+    font-size: x-large;
+    font-family:  'Onest', sans-serif;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -45,14 +45,15 @@ nav {
     display: grid;
     grid-column: 4;
     grid-row: 1;
+    font-size: x-large;
     justify-content: space-around;
     justify-items: center;
-    color: #F0F0C9;
-    font-family: 'Tapestry', 'Grechen Fuemen', sans-serif;
+    color: #2241a0;
+    font-family: 'Silkscreen', sans-serif;
     width: 100%;
 }
 nav :hover {
-    background-color: #642B2B;
+    background-color: #2241a0;
     color: #F0F0C9;
 }
 footer {
