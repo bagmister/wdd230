@@ -1,50 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@500&family=Silkscreen&display=swap');
-header {
-    background-color: #10cae2;
+.home-page {
     display: grid;
-    grid-column:  1/8;
-    grid-row: 1;
-    align-items: center;
-
-}
-language {
-    grid-column: 3;
-    grid-row: 4;
-}
-
-main {
-    grid-column: 2/8;
-    grid-row: 4;
-    grid-area: 1,2;
-    align-items: center;
-}
-.author-image {
-    grid-column: 2;
-    grid-row: 5;
-    width: 20%;
-    height: 20%;
-}
-h2 {
-    align-items: center;
-}
-
-
-body {
-    display: grid;
-    grid-template-columns: repeat(8, 7em);
-    grid-template-rows: repeat(8, 7em);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     background-color: #e8cb10;
     padding: 0;
     font-size: x-large;
-    font-family:  'Onest', sans-serif;
+    font-family: 'Onest', sans-serif;
     margin: 0 auto;
     max-width: 1200px;
+    position: absolute;
+    gap: 0;
 }
+.landingPageHeader{
+    display: grid;
+    background-color: aqua;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .3fr ,3fr;
+
+}
+
+.landingPageHeader img{
+    grid-column: 1;
+    grid-row: 1;
+    scale: .5;
+}
+
+.landingPageHeader div{
+    grid-row: 1;
+    grid-column: 2;
+    padding-left: 30rem;
+}
+
 nav {
     text-align: center;
     display: grid;
-    grid-column: 4;
-    grid-row: 1;
+    grid-column: 2;
+    grid-row: 2;
     font-size: x-large;
     justify-content: space-around;
     justify-items: center;
@@ -56,8 +48,23 @@ nav :hover {
     background-color: #2241a0;
     color: #F0F0C9;
 }
-footer {
-    grid-column: 2/5;
-    grid-row: 6;
-    text-align: center;
+#language {
+    grid-column: 2;
+    grid-row: 3;
+
+}
+
+.info-home-page{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+h2{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+footer{
+    grid-column: 2;
+    grid-row: 4;
 }
