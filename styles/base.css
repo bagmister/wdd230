@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@500&family=Silkscreen&display=swap');
+main{
+    max-width: 1200px;
+}
 .home-page {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -13,28 +16,30 @@
     gap: 0;
 }
 .landingPageHeader{
-    display: grid;
     background-color: aqua;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .3fr ,3fr;
+}
 
+.landingPageHeader h1{
+    grid-column: 1/4;
+    grid-row: 1;
 }
 
 .landingPageHeader img{
-    grid-column: 1;
+    grid-column: 1/4;
     grid-row: 1;
-    scale: .5;
+}
+
+.landingPageHeader h1 {
+    display: flex;
 }
 
 .landingPageHeader div{
-    grid-row: 1;
-    grid-column: 2;
-    padding-left: 30rem;
+
 }
 
 nav {
     text-align: center;
-    display: grid;
+    display: flex;
     grid-column: 2;
     grid-row: 2;
     font-size: x-large;
