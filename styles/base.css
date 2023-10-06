@@ -12,35 +12,34 @@ main{
     font-family: 'Onest', sans-serif;
     margin: 0 auto;
     max-width: 1200px;
-    position: absolute;
+    position: relative;
     gap: 0;
 }
 .landingPageHeader{
+    grid-column: 1/4;
     background-color: aqua;
-}
 
-.landingPageHeader h1{
-    grid-column: 1/4;
-    grid-row: 1;
 }
-
-.landingPageHeader img{
-    grid-column: 1/4;
-    grid-row: 1;
-}
-
 .landingPageHeader h1 {
     display: flex;
+    flex-grow: 1;
+}
+.landingPageHeader h1 img{
+    scale: .7;
+}
+.landingPageHeader h1 div{
+    padding-top: 14rem;
+    justify-content: center;
 }
 
 nav {
     text-align: center;
     display: flex;
-    grid-column: 2;
+    flex-grow: 1;
+    grid-column: 1/5;
     grid-row: 2;
     font-size: x-large;
-    justify-content: space-around;
-    justify-items: center;
+    justify-content: space-evenly;
     color: #2241a0;
     font-family: 'Silkscreen', sans-serif;
     width: 100%;
