@@ -22,6 +22,9 @@ main{
     z-index: 100;
     top: 1rem;
     right: 1rem;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
 }
 .closeIcon{
     display: none;
@@ -63,6 +66,8 @@ nav {
     color: #2241a0;
     font-family: 'Silkscreen', sans-serif;
     width: 100%;
+    transform: translateY(-200%)
+    transition: transform 0.2s;
 }
 nav :hover {
     background-color: #2241a0;
