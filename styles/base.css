@@ -7,7 +7,6 @@
 }
 
 body {
-    display: block;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -27,6 +26,7 @@ body {
     background: white;
     cursor: pointer;
 }
+
 .closeIcon{
     display: none;
 }
@@ -41,6 +41,12 @@ header {
 
 
 }
+
+main {
+    display: block;
+    margin-top: 2rem;
+}
+
 header img{
     overflow: clip;
     height: auto;
@@ -48,7 +54,7 @@ header img{
 }
 header #name{
     justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Silkscreen', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -64,9 +70,8 @@ nav {
     color: #2241a0;
     font-family: 'Silkscreen', sans-serif;
     width: 100%;
-    transform: translateY(-200%);
-    transition: transform 0.2s;
 }
+
 nav a:hover {
     background-color: #2241a0;
     color: #F0F0C9;
@@ -76,14 +81,13 @@ nav .active {
     background-color: rgba(0, 0, 0, .3);
 }
 
-main {
+#cardContainer {
     gap: 1rem;
     margin: 2rem;
     padding: 1rem;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    max-width: max-content;
     flex-grow: 1;
 }
 
@@ -104,11 +108,9 @@ footer {
     float:left;
     align-items: center;
     background-color: #F0F0C9;
-    width: 50%;
     font-family: "Mochiy Pop One", sans-serif;
     font-weight: 400;
     font-style: normal;
-
 }
 
 #information, #learningActivities {

@@ -1,4 +1,45 @@
-@media (min-width:40rem) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width:520px) {
+    header img{
+        scale: .8;
+        overflow: clip;
+        height: auto;
+        display: block;
+    }
 
+    nav {
+        z-index: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #cardContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;    
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+    footer {
+        font-size: .8rem;
+    }
 }
 
