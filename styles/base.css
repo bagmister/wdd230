@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@500&family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-main{
-    max-width: 1200px;
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.home-page {
-    display: grid;
-    grid-template: auto 1fr auto/ auto 1fr auto;
-    background-color: #e8cb10;
-    padding: 0;
-    font-size: x-large;
-    font-family: 'Onest', sans-serif;
-    margin: 0 auto;
-    max-width: auto;
-    position: relative;
-    gap: 0;
+body {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #name{
@@ -35,38 +31,36 @@ main{
     display: none;
 }
 
-.landingPageHeader{
-
-    grid-column: 1/4;
+header {
     background-color: aqua;
-
-}
-.landingPageHeader {
     display: flex;
-    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-}
-.landingPageHeader img{
- top: 0;
- right: 0;
- left: 0;
- scale: .7;
+    padding: 1rem;
+
 
 }
-.landingPageHeader #name{
+header img{
+    overflow: clip;
+    height: auto;
+    display: block;
+}
+header #name{
     justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
 }
 
 nav {
     z-index: 0;
     text-align: center;
     display: flex;
+    flex-direction: row;
     top: 0;
-    flex-grow: 2;
-    grid-column: 1/5;
-    grid-row: 2;
-    font-size: x-large;
+    font-size: 1.5rem;
     justify-content: space-evenly;
+    padding: 1rem;
     color: #2241a0;
     font-family: 'Silkscreen', sans-serif;
     width: 100%;
@@ -81,18 +75,51 @@ nav a:hover {
 nav .active {
     background-color: rgba(0, 0, 0, .3);
 }
-#language {
-    grid-column: 3;
-    grid-row: 4;
 
+main {
+    gap: 1rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: max-content;
+    flex-grow: 1;
 }
 
-.info-home-page{
-    grid-row: 3;
-    grid-column: auto;
-}
-
-footer{
-    grid-row: 6;
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
     justify-content: center;
+    background-color: #F0F0C9;
+    margin-top: auto;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    float:left;
+    align-items: center;
+    background-color: #F0F0C9;
+    width: 50%;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#information, #learningActivities {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: #F0F0C9;
 }

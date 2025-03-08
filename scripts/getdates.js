@@ -1,4 +1,13 @@
-currentDate = new Date().getFullYear();
-document.body.innerHTML = document.body.innerHTML.replace('current_date', currentDate);
-lastModDate = new Date(document.lastModified)
-document.body.innerHTML = document.body.innerHTML.replace('last_Modified', lastModDate);
+function lastModified(){
+    let lastModifiedDate = new Date(document.lastModified);
+    document.getElementById("lastModified").innerHTML = lastModifiedDate.toLocaleString()
+}
+
+function currentYear() {
+    const currentYearValue = new Date().getFullYear();
+    document.getElementById("currentyear").innerHTML = currentYearValue;
+}
+
+
+window.addEventListener('load',currentYear)
+window.addEventListener('load',lastModified)
