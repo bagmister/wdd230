@@ -3,6 +3,7 @@
 main{
     max-width: 1200px;
 }
+
 .home-page {
     display: grid;
     grid-template: auto 1fr auto/ auto 1fr auto;
@@ -11,9 +12,13 @@ main{
     font-size: x-large;
     font-family: 'Onest', sans-serif;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: auto;
     position: relative;
     gap: 0;
+}
+
+#name{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .hamburger{
@@ -36,20 +41,19 @@ main{
     background-color: aqua;
 
 }
-.landingPageHeader h1 {
+.landingPageHeader {
     display: flex;
     flex-grow: 1;
+    justify-content: center;
 }
-.landingPageHeader h1 img{
+.landingPageHeader img{
  top: 0;
  right: 0;
  left: 0;
- bottom: 3;
  scale: .7;
 
 }
-.landingPageHeader h1 div{
-    padding-top: 14rem;
+.landingPageHeader #name{
     justify-content: center;
 }
 
@@ -69,9 +73,13 @@ nav {
     transform: translateY(-200%);
     transition: transform 0.2s;
 }
-nav :hover {
+nav a:hover {
     background-color: #2241a0;
     color: #F0F0C9;
+}
+
+nav .active {
+    background-color: rgba(0, 0, 0, .3);
 }
 #language {
     grid-column: 3;
@@ -90,6 +98,6 @@ h2{
 }
 
 footer{
-    grid-column: 2/3;
     grid-row: 5;
+    justify-content: center;
 }
