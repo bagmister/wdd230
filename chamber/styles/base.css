@@ -3,103 +3,105 @@
     padding: 0;
 }
 
-@media (max-width:1919px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-    header {
-        background-color: aqua;
-        padding: 1rem;
-        width: 100%;
-        font-family: "Kaushan Script", cursive;
-        justify-content: center;
-        align-items: center;
-    }
+header {
+    background-color: aqua;
+    padding: 1rem;
+    width: 100%;
+    font-family: "Kaushan Script", cursive;
+    justify-content: center;
+    align-items: center;
+}
 
-    #navigation {
-        justify-content: space-evenly;
-        display: flex;
-        flex-direction: row;
-        background-color: #E7C081;
-    }
+#navigation {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    background-color: #E7C081;
+}
 
-    #navigation a:hover {
-        background-color: #5f58e4;
-        color: #ffffff;
-    }
+#navigation a:hover {
+    background-color: #5f58e4;
+    color: #ffffff;
+}
 
-    main {
-        display: block;
-        margin-top: 2rem;
-    }
+main {
+    display: block;
+    margin-top: 2rem;
+}
 
-    h1 {
-        justify-content: center;
-        justify-items: center;
-        width: 100%;
-        font-family: "Kaushan Script", cursive;
-        background-color: #5f58e4;
-    }
+h1 {
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    font-family: "Kaushan Script", cursive;
+    background-color: #5f58e4;
+}
 
-    #contactUs {
-        justify-content: space-evenly;
-    }
+#contactUs {
+    justify-content: space-evenly;
+}
 
-    footer {
-        display: flex;
-        flex-direction: column;
-        margin-top: auto;
-        width: 100%;
-        font-family: "Kaushan Script", cursive;
-        justify-content: center;
-        align-items: center;
-        background-color: #E7C081;
-    }
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    width: 100%;
+    font-family: "Kaushan Script", cursive;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7C081;
+}
 
-    .informationSection {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        padding: 1rem;
-        box-sizing: border-box;
-    }
+.informationSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
 
-    .card {
-        display: flex;
-        padding: 1.5rem;
-        flex-direction: row;
-        align-items: center;
-        background-color: #F0F0C9;
-        font-weight: 400;
-        font-style: normal;
-        width: 90%;
-        margin: 0.5rem;
-        border-radius: 15px;
-        box-sizing: border-box;
-    }
+.card {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F0F0C9;
+    font-weight: 400;
+    font-style: normal;
+    width: 90%;
+    margin: 0.5rem;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
 
+@media (min-width:421px) {
+    
     .discoverPage {
         display: grid;
         grid-template-columns: 2fr 5fr;
         grid-template-rows: auto;
         grid-gap: 1rem;
     }
-
+    
     #pictureReel {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 1rem;
     }
-
-    #pictureReel picture {
+    
+    #pictureReel picture img {
         width: 100%;
-        max-width: 300px;
+        height: auto;
+        padding: .1rem;
     }
 }
 
@@ -107,5 +109,11 @@
     .discoverPage {
         display: flex;
         flex-direction: column;
+    }
+
+    #pictureReel picture img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
     }
 }
