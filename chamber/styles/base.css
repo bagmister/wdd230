@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-@media (min-width:421px) {
+@media (max-width:1919px) {
     body {
         display: flex;
         flex-direction: column;
