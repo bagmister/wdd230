@@ -34,14 +34,6 @@
         <img src="images/myPhoto-resized.png" alt="kevin Bagley">
         <p id="name">Kevin Bagley</p>
         <div class="menu">
-            <div class="off-screen-menu">
-                <ul>
-                    <li title="home">Home</li>
-                    <li title="chamber">Chamber</li>
-                    <li title="siteplan">Site Plan</li>
-                    <li title="form">Form</li>
-                </ul>
-            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -56,7 +48,31 @@
         </div>
     </header>
     <main>
-
+        <h1>Create User Account</h1>
+        <form id="accountForm" action="record.html" class="wf1">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" pattern="[a-zA-Z0-9]+" title="Password must be at least 8 characters long and alphanumeric only.">
+            <br><br>
+    
+            <label for="passwordConfirm">Confirm Password:</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+            <br><br>
+    
+            <label for="email">Email (must be from byui.edu domain):</label>
+            <input type="email" id="email" name="email" required title="Please enter a valid email address">
+            <br><br>
+    
+            <label for="rating">Rate our Page with the slider. 5 being the best!</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" onchange="updateRatingDisplay()">
+            <span id="ratingValue">5</span>
+            <br><br>
+    
+            <button type="submit">Create User Account</button>
+        </form>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> Kevin Bagley, United States of America</p>
