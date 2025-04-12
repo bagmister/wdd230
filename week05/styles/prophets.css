@@ -8,8 +8,8 @@ main {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: #ddd;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 h1 {
     text-align: center;
@@ -42,9 +42,5 @@ section h2 {
 @media only screen and (min-width: 32.5em) {
     h1 {
         font-size: 2rem;
-    }
-
-    main {
-        width: 320px;
     }
 }
