@@ -1,0 +1,28 @@
+{
+    "familyName": "Bagley",
+    "MoveinDate": "8/15/2023",
+    "NumberOfFamilyMembers": "4",
+    "VisitedByBishopric": "false",
+    "IndividualFamilyMembers": [
+      {
+        "Name": "Kevin",
+        "Gender": "M",
+        "Birthdate": "01/02/03"
+      },
+      {
+        "Name": "Heater",
+        "Gender": "F",
+        "Birthdate": "02/03/04"
+      },
+      {
+        "Name": "Kaitlyn",
+        "Gender": "F",
+        "Birthdate": "05/06/20"
+      },
+      {
+        "Name": "Ariella",
+        "Gender": "F",
+        "Birthdate": "08/09/19"
+      }
+    ]
+  }
