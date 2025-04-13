@@ -10,7 +10,6 @@ async function getProphetData() {
 }
 
 function displayProphets(prophets) {
-    console.log(prophets)
     let prophetsRefined = prophets.prophets
     prophetsRefined.forEach(prophet => {
         let card = document.createElement("section")
