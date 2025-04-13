@@ -35,7 +35,7 @@ function displayLinks(data) {
             const a = document.createElement("a");
             const href = link.url.startsWith("http") ? link.url : `${baseURL}${link.url}`;
             a.setAttribute("href", href);
-            a.textContent = link.title;
+            a.textContent = link.title + " | ";
             li.appendChild(a);
 
             if (index < week.links.length - 1) {
