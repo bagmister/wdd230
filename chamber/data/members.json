@@ -24,7 +24,7 @@
             "phoneNumber": "(385) 388-8152",
             "url": "https://www.exxon.com/en/find-station/exxon-magna-ut-rebel914-200328450?utm_medium=referral&utm_source=yxt-extnet&utm_campaign=us_fue_ret_xom_yxt",
             "image": "/chamber/images/discover/show_image3.webp",
-            "membershipLevel": "Platinum",
+            "membershipLevel": "Bronze",
             "yearOpened": "1970"
         },
         {
@@ -33,7 +33,7 @@
             "phoneNumber": "(801) 250-5853",
             "url": "https://providentliving.churchofjesuschrist.org/?y_source=1_MjQxODg2NDItNTQ1LWxvY2F0aW9uLndlYnNpdGU%3D",
             "image": "/chamber/images/discover/show_image4.webp",
-            "membershipLevel": "free",
+            "membershipLevel": "non-profit",
             "yearOpened": "1961"
         },
         {
@@ -60,7 +60,7 @@
             "phoneNumber": "(385) 557-8600",
             "url": "https://bubbabsbarber.com/",
             "image": "/chamber/images/discover/babbas.webp",
-            "membershipLevel": "free",
+            "membershipLevel": "non-profit",
             "yearOpened": "2025"
         }
     ]
