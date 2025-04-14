@@ -5,7 +5,7 @@
             "address": "2969 South 8950 West Magna, Utah 84044",
             "phoneNumber": "(801) 205-6563",
             "url": "https://entheogen.massagetherapy.com/",
-            "image": "chamber/images/discover/show_image1.webp",
+            "image": "/chamber/images/discover/show_image1.webp",
             "membershipLevel": "Silver",
             "yearOpened": "2000"
         },
@@ -14,7 +14,7 @@
             "address": "2435 S 8000 W Magna, Utah 84044",
             "phoneNumber": "(435) 236-3378",
             "url": "http://catscale.com/?utm_medium=yext&utm_source=extnet",
-            "image": "chamber/images/discover/show_image2.webp",
+            "image": "/chamber/images/discover/show_image2.webp",
             "membershipLevel": "Gold",
             "yearOpened": "2022"
         },
@@ -23,7 +23,7 @@
             "address": "7210 West 3500 South Magna, Utah 84044",
             "phoneNumber": "(385) 388-8152",
             "url": "https://www.exxon.com/en/find-station/exxon-magna-ut-rebel914-200328450?utm_medium=referral&utm_source=yxt-extnet&utm_campaign=us_fue_ret_xom_yxt",
-            "image": "chamber/images/discover/show_image3.webp",
+            "image": "/chamber/images/discover/show_image3.webp",
             "membershipLevel": "Platinum",
             "yearOpened": "1970"
         },
