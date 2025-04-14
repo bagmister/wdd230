@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magna Chamber of Commerce</title>
-    <meta name="description"
-        content="WDD 230 - Web Frontend Development. Chamber of Commerce">
+    <meta name="description" content="WDD 230 - Web Frontend Development. Chamber of Commerce">
     <meta name="author" content="Kevin Bagley">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
@@ -18,13 +17,13 @@
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/getDates.js" defer></script>
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <meta property="og:title" content="About me">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bagmister.github.io/wdd230/chanmber">
     <meta property="og:image" content="https://pics4.city-data.com/cpicv/vfiles13516.jpg">
     <meta name="twitter:title" content="About me">
-    <meta name="twitter:description"
-        content="WDD 230 - Web Frontend Development. Chamber of Commerce">
+    <meta name="twitter:description" content="WDD 230 - Web Frontend Development. Chamber of Commerce">
     <meta name="twitter:image" content="images/myPhoto-resized.png">
     <meta name="twitter:card" content="images/myPhoto-resized.png">
 </head>
@@ -47,23 +46,18 @@
             <section class="card">
                 <div id="currentEvents">
                     <h2>Current Event(s)</h2>
-                    <div id="weather">Weather</div>
-                    <div id="numberOfVisits">number of visits</div>
+                    <div></div>
                 </div>
             </section>
             <section class="card">
                 <div id="weather">
-                    <h2>Weather</h2>
-                    <ul>
-                        <li><a href="week01/holygrail.html">week 01</a></li>
-                        <li><a href="week02/design.html">week 02</a></li>
-                        <li><a href="https://codepen.io/bagmister/pen/yLZNaNP">week 03</a>
-                            <a href="https://codepen.io/bagmister/pen/WNPQeNz">hamberger menu</a>
-                        </li>
-                        <li><a href="week04/">week 04</a></li>
-                        <li><a href="week05/bom.html">week 05</a></li>
-                    </ul>
-                </div>
+                    <div id="weather">Weather
+                        <p>The current temperature is: <span id="current-temp"></span></p>
+                        <figure>
+                            <img id="weather-icon" src="" , alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
             </section>
             <section class="card">
                 <div id="spotlights">
