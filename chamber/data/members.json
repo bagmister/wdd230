@@ -32,7 +32,7 @@
             "address": "3648 S 7200 W Magna, Utah 84044",
             "phoneNumber": "(801) 250-5853",
             "url": "https://providentliving.churchofjesuschrist.org/?y_source=1_MjQxODg2NDItNTQ1LWxvY2F0aW9uLndlYnNpdGU%3D",
-            "image": "chamber/images/discover/show_image4.webp",
+            "image": "/chamber/images/discover/show_image4.webp",
             "membershipLevel": "free",
             "yearOpened": "1961"
         },
@@ -41,7 +41,7 @@
             "address": "8755 west magna main street. Magna, UT 84044",
             "phoneNumber": "(801) 698-7987",
             "url": "na",
-            "image": "chamber/images/discover/show_image5.webp",
+            "image": "/chamber/images/discover/show_image5.webp",
             "membershipLevel": "silver",
             "yearOpened": "2019"
         },
@@ -50,7 +50,7 @@
             "address": "8997 W Newhouse Dr #516 Magna, UT 84044",
             "phoneNumber": "786-856-8626",
             "url": "na",
-            "image": "chamber/images/discover/show_image6.webp",
+            "image": "/chamber/images/discover/show_image6.webp",
             "membershipLevel": "Gold",
             "yearOpened": "1985"
         },
@@ -59,7 +59,7 @@
             "address": "8420 West Washakie Lane Magna, Utah 84044",
             "phoneNumber": "(385) 557-8600",
             "url": "https://bubbabsbarber.com/",
-            "image": "chamber/images/discover/babbas.png",
+            "image": "/chamber/images/discover/babbas.png",
             "membershipLevel": "free",
             "yearOpened": "2025"
         }
