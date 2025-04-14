@@ -35,19 +35,35 @@ function displayBusinesses(businesses) {
     display.innerHTML = '';
     businesses.businesses.forEach(business => {
         let card = document.createElement("section");
-        let fullName = document.createElement("h2");
+        let businessName = document.createElement("h2");
+        let phone = document.createElement("h3")
+        let address = document.createElement("h3")
+        let membershiplevel = document.createElement("p")
+        let startBusinessyear = document.createElement("h4")
+        let businessUrl = document.createElement("a")
         let logo = document.createElement("img");
 
-        fullName.textContent = `${business.name}`;
+        phone.textContent = `${business.phoneNumber}`
+        address.textContent = `${business.address}`
+        membershiplevel.textContent = `${business.membershipLevel}`
+        startBusinessyear.textContent = `${business.yearOpened}`
+        businessName.textContent = `${business.name}`;
+        businessUrl.textContent = "website"
 
         logo.setAttribute('src', business.image);
         logo.setAttribute('alt', `logo of ${business.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '340');
-        logo.setAttribute('height', '420');
+        logo.setAttribute('height', 'auto');
 
-        card.appendChild(fullName);
+        businessUrl.setAttribute('href', `${business.url}`)
+
+        card.appendChild(businessName);
         card.appendChild(logo);
+        card.appendChild(businessUrl)
+        card.appendChild(phone)
+        card.appendChild(address)
+        card.appendChild(membershiplevel)
 
         display.appendChild(card);
     });
