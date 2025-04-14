@@ -8,7 +8,6 @@ async function getLinks() {
         if (response.ok) {
             const data = await response.json();
             displayLinks(data);
-            console.table(data)
         } else {
             throw Error(await response.text());
         }
