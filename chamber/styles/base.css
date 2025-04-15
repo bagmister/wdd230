@@ -38,6 +38,7 @@ main {
 h1 {
     justify-content: center;
     justify-items: center;
+    text-align: center;
     width: 100%;
     font-family: "Kaushan Script", cursive;
     background-color: #5f58e4;
@@ -180,6 +181,37 @@ footer {
         color: blue;
         font-size: .9rem;
     }
+    
+
+}
+#currentEventsData {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+
+}
+
+#currentEventsData section {
+    text-align: center;
+}
+
+#currentEventsData img{
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;
+}
+
+#currentEventsData section > * {
+    margin: 0.1rem;
+}
+
+#currentEventsData h3 {
+    font-family: "Caveat", cursive;
+}
+
+#currentEventsData section img {
+    height: 75px;
+    max-width: 100%;
 }
 .menu {
     margin: 1rem auto;
