@@ -1,7 +1,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const forecastDiv = document.querySelector('#weatherforcst');
+const forecastDiv = document.querySelector('#weatherforcast');
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=40.71&lon=-112.10&units=imperial&appid=e1a74b86df31d3f79449799eb8ed7845';
 const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.71&lon=-112.10&units=imperial&appid=e1a74b86df31d3f79449799eb8ed7845';
 
@@ -42,8 +42,6 @@ function displayResults(data, single) {
         weatherIcon.setAttribute('alt', desc);
         captionDesc.textContent = desc;
     } else {
-        forecastDiv.innerHTML = 'Weather Forecast:<br>';
-
         const dailyForecasts = [];
         const seenDates = new Set();
 
@@ -57,14 +55,13 @@ function displayResults(data, single) {
                 seenDates.add(date);
             }
         });
-
+        
         dailyForecasts.forEach(forecast => {
             const temp = Math.round(forecast.main.temp);
             const iconSrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
             const desc = forecast.weather[0].description;
             const dateTime = new Date(forecast.dt * 1000);
             const dateStr = dateTime.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
-
             const forecastItem = document.createElement('div');
             forecastItem.innerHTML = `
                 <p>${dateStr}: ${temp}°F</p>
